@@ -1,13 +1,13 @@
 # New-AzWin10LabEnv
 The script to create multiple Windows 10 pro VMs in Azure
 
+![diagram](images/diagram.png)
+
 # Usage
 
 If you want to create 10 Vms in "eval" resouce group, run the following command.
 
 `./New-AzWin10LabEnv.ps1 -numberOfVMs 10 -resourceGroupName eval`
-
-![diagram](images/diagram.png)
 
 # Sample
 
