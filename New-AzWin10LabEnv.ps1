@@ -7,8 +7,7 @@ $ErrorActionPreference = "stop"
 
 $passwords = New-Object 'System.Collections.Generic.List[string]'
 for ($i =0; $i -lt $numberOfVMs; $i++){
-    # https://github.com/kpatnayakuni/azps-extracts/tree/master/extract-017
-    $password =  -join ((33..126) | Get-Random -Count 12 | ForEach-Object { [char]$_ })
+    $password = Get-Random -Maximum 100000000
     $passwords.add($password)
 }
 
